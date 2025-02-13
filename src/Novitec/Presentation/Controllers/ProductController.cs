@@ -1,6 +1,7 @@
 ﻿using Novitec.Application.Interfaces;
 using Novitec.Domains.Entities;
 using Novitec.Application.Services;
+using Novitec.Presentation.Requests;
 
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,7 +19,7 @@ namespace Novitec.Presentation.Controllers
         }
 
         [HttpPost]
-        public async Task<bool> CreateProductAsync(Product product)
+        public async Task<bool> CreateProductAsync(ProductRequest product)
         {
             return await _productService.CreateProductAsync(product);
         }
@@ -37,9 +38,9 @@ namespace Novitec.Presentation.Controllers
 
 
         [HttpPut]
-        public async Task<bool> UpdateProductAsync(int Id)
+        public async Task<bool> UpdateProductAsync(ProductRequest product)
         {
-            return await _productService.UpdateProductAsync(Id);
+            return await _productService.UpdateProductAsync(product);
         }
 
         [HttpDelete]
