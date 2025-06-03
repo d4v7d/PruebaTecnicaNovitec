@@ -1,4 +1,4 @@
-# Proyecto Personal: API de Productos y Actualización de Tipo de Cambio
+# API de Productos y Actualización de Tipo de Cambio
 
 Este repositorio corresponde a un proyecto personal que integra dos componentes principales orientados a la gestión de productos y la actualización automática del tipo de cambio.
 
